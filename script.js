@@ -19,16 +19,17 @@ var rebuses = [
 var hint = document.getElementById("hint");
 var text = document.getElementById("text");
 var input = document.getElementById("input");
-var button = document.getElementById("button");
+var check = document.getElementById("check");
+var random = document.getElementById("random")
 var correct = document.getElementById("correct");
 var rebusTotal = document.getElementById("rebusTotal");
 
-var rebusnum = 0;
-var correctnum = 0;
+window.rebusnum = 0;
+window.correctnum = 0;
 
 var nextrebus = function() {
   if (rebusnum < rebuses.length) {
-    var rebus = rebuses[rebusnum];
+    window.rebus = rebuses[rebusnum];
     text.innerHTML = rebus["rebus"];
     rebusTotal.innerHTML = "Rebus no. " + (rebusnum + 1).toString() + " out of " + rebuses.length
   } else {
@@ -37,8 +38,7 @@ var nextrebus = function() {
   }
 }
 
-button.onclick = function() {
-  var rebus = rebuses[rebusnum];
+check.onclick = function() {
   if (input.value.toUpperCase() == rebus["answer"]) {
     input.value = ""
     hint.innerHTML = "Hint: ";
@@ -49,6 +49,11 @@ button.onclick = function() {
   } else {
     hint.innerHTML = "Hint: " + rebus["hint"];
   }
+}
+
+random.onclick = function() {
+  window.rebusnum = Math.floor(Math.random() * rebuses.length)
+  nextrebus()
 }
 
 nextrebus()
