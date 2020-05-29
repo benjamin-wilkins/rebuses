@@ -3,6 +3,11 @@ var rebuses = [
     "rebus" : "RE + 🚌",
     "answer" : "REBUS",
     "hint" : "This is one!"
+  },
+  {
+    "rebus" : "❄ + 🤵",
+    "answer" : "SNOWMAN",
+    "hint" : "Frosty the ____"
   }
 ];
 
