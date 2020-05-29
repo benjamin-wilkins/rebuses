@@ -11,6 +11,7 @@ var text = document.getElementById("text");
 var input = document.getElementById("input");
 var button = document.getElementById("button");
 var correct = document.getElementById("correct");
+var rebusTotal = document.getElementById("rebusTotal");
 
 var rebusnum = 0;
 var correctnum = 0;
@@ -19,6 +20,7 @@ var nextrebus = function() {
   if (rebusnum < rebuses.length) {
     var rebus = rebuses[rebusnum];
     text.innerHTML = rebus["rebus"];
+    rebusTotal.innerHTML = "Rebus no. " + (rebusnum + 1).toString() + " out of " + rebuses.length
   } else {
     rebusnum = 0;
     nextrebus()
