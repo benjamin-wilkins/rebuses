@@ -27,7 +27,7 @@ var nextrebus = function() {
 
 button.onclick = function() {
   var rebus = rebuses[rebusnum];
-  if (input.value == rebus["answer"]) {
+  if (input.value.toUpperCase() == rebus["answer"]) {
     input.value = ""
     hint.innerHTML = "Hint: ";
     rebusnum += 1;
