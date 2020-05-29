@@ -49,11 +49,11 @@ check.onclick = function() {
   } else {
     hint.innerHTML = "Hint: " + rebus["hint"];
   }
-}
+};
 
 random.onclick = function() {
   window.rebusnum = Math.floor(Math.random() * rebuses.length)
   nextrebus()
-}
+};
 
-nextrebus()
+nextrebus();
