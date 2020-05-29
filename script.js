@@ -36,7 +36,7 @@ var nextrebus = function() {
     rebusnum = 0;
     nextrebus()
   }
-}
+};
 
 check.onclick = function() {
   if (input.value.toUpperCase() == rebus["answer"]) {
