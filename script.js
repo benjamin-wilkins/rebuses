@@ -7,7 +7,12 @@ var rebuses = [
   {
     "rebus" : "❄ + 🤵",
     "answer" : "SNOWMAN",
-    "hint" : "Frosty the ____"
+    "hint" : "Frosty the ____,"
+  },
+  {
+    "rebus" : "🐖 + ✎"
+    "answer" : "PIGPEN"
+    "hint" : "An alternative to morse code using lines and dots."
   }
 ];
 
