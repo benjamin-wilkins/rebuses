@@ -1,31 +1,37 @@
-var rebuses = {
+var rebuses = [
   {
-    "rebus" : "TEST",
-    "answer" : "TEST",
-    "hint" : "TEST"
+    "rebus" : "RE + 🚌",
+    "answer" : "REBUS",
+    "hint" : "This is one!"
   }
-};
+];
 
-var hint = document.getelementbyid("hint");
-var text = document.getelementbyid("text");
-var input = document.getelementbyid("input");
-var button = document.getelementbyid("button");
+var hint = document.getElementById("hint");
+var text = document.getElementById("text");
+var input = document.getElementById("input");
+var button = document.getElementById("button");
 
 rebusnum = 0;
 
-var nextrebus = function {} {
-  var rebus = rebuses[rebusnum];
-  text.innerhtml = rebus["rebus"];
+var nextrebus = function() {
+  if (rebusnum < rebuses.length) {
+    var rebus = rebuses[rebusnum];
+    text.innerHTML = rebus["rebus"];
+  } else {
+    rebusnum = 0;
+    nextrebus()
+  }
 }
 
-var button.onclick = function {} {
-  if {input.value == rebus["answer"]} {
-    hint.innerhtml = "";
+button.onclick = function() {
+  var rebus = rebuses[rebusnum];
+  if (input.value == rebus["answer"]) {
+    input.value = ""
+    hint.innerHTML = "Hint: ";
     rebusnum += 1;
     nextrebus();
-  }
-  else {
-    hint.innerhtml = rebus["hint"];
+  } else {
+    hint.innerHTML = "Hint:" + rebus["hint"];
   }
 }
 
