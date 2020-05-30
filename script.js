@@ -40,7 +40,7 @@ var rebuses = [
 	"hint" : "The first 2 letters of the Greek alphabet, merged to make an English word."
   },
   {
-    "rebus" : "ATHLE + ✓",
+    "rebus" : "ATHLE + ✓ + S",
     "answer" : "ATHLETICS",
     "hint" : "A kind of sport."
   },
