@@ -30,7 +30,7 @@ var rebuses = [
     "hint" : "The sound a frog makes."
   },
   {
-    "rebus" : "🐈 / 🐕 + ↻ + SPACE + 🚉",
+    "rebus" : "🐈 / 🐕 + ↻ + {SPACE} + 🚉",
     "answer" : "PETROL STATION",
     "hint" : "Where you fill up your car with fuel - 🚉 = station."
   },
@@ -53,6 +53,11 @@ var rebuses = [
     "rebus" : "<i>p</i>",
     "answer" : "PIANO",
     "hint" : "<i>p</i> is it's symbol - it also has 🔑s that will not open your door."
+  },
+  {
+    "rebus" : "📗 + 🏠",
+    "answer" : "GREENHOUSE",
+    "hint" : "A place where plants needing heat are grown."
   }
 ];
 
