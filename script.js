@@ -60,7 +60,7 @@ var rebuses = [
     "hint" : "📗 is green."
   },
   {
-    "rebus" : "🎄 / 🎅 / 🤶 + {SPACE} + ⏰",
+    "rebus" : "🎄 / 🎅 + {SPACE} + ⏰",
     "answer" : "CHRISTMAS TIME",
     "hint" : "A time when 🎁s are sent and recieved."
   }
