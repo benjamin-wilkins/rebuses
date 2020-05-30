@@ -57,7 +57,7 @@ var rebuses = [
   {
     "rebus" : "📗 + 🏠",
     "answer" : "GREENHOUSE",
-    "hint" : "A place where plants needing heat are grown."
+    "hint" : "📗 is green."
   }
 ];
 
