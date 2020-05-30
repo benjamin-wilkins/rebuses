@@ -50,9 +50,9 @@ var rebuses = [
 	"hint" : "An animal that is said to be cheeky."
   },
   {
-	"rebus" : "𝆏",
+	"rebus" : "<i>p</i>",
 	"answer" : "PIANO",
-	"hint" : "𝆏 is it's symbol - it also has 🔑s that will not open your door."
+	"hint" : "<i>p</i> is it's symbol - it also has 🔑s that will not open your door."
   }
 ];
 
