@@ -63,6 +63,7 @@ var rebuses = [
     "rebus" : "🎄 / 🎅 / 🤶 + {SPACE} + ⏰",
     "answer" : "CHRISTMAS TIME",
     "hint" : "A time when 🎁s are sent and recieved."
+  }
 ];
 
 var hint = document.getElementById("hint");
