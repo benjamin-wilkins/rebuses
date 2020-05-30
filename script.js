@@ -15,29 +15,29 @@ var rebuses = [
     "hint" : "An alternative to morse code using lines and dots."
   },
   {
-	"rebus" : "🔥 + 🝚",
-	"answer" : "FIREWALL",
-	"hint" : "Something that stops you from seeing bad things on the web."
+    "rebus" : "🔥 + 🝚",
+    "answer" : "FIREWALL",
+    "hint" : "Something that stops you from seeing bad things on the web."
   },
   {
-	"rebus" : "BE + 🌿",
-	"answer" : "BELIEF",
-	"hint" : "Faith in something or someone."
+    "rebus" : "BE + 🌿",
+    "answer" : "BELIEF",
+    "hint" : "Faith in something or someone."
   },
   {
-	"rebus" : "🐇 <del>A</del> <ins>I</ins>",
-	"answer" : "RIBBIT",
-	"hint" : "The sound a frog makes."
+    "rebus" : "🐇 <del>A</del> <ins>I</ins>",
+    "answer" : "RIBBIT",
+    "hint" : "The sound a frog makes."
   },
   {
-	"rebus" : "🐈 / 🐕 + ↻ + SPACE + 🚉",
-	"answer" : "PETROL STATION",
-	"hint" : "Where you fill up your car with fuel - 🚉 = station."
+    "rebus" : "🐈 / 🐕 + ↻ + SPACE + 🚉",
+    "answer" : "PETROL STATION",
+    "hint" : "Where you fill up your car with fuel - 🚉 = station."
   },
   {
-	"rebus" : "α + β",
-	"answer" : "ALPHABET",
-	"hint" : "The first 2 letters of the Greek alphabet, merged to make an English word."
+    "rebus" : "α + β",
+    "answer" : "ALPHABET",
+    "hint" : "The first 2 letters of the Greek alphabet, merged to make an English word."
   },
   {
     "rebus" : "ATHLE + ✓ + S",
@@ -45,14 +45,14 @@ var rebuses = [
     "hint" : "A kind of sport."
   },
   {
-	"rebus" : "📅 (M) + 🔑",
-	"answer" : "MONKEY",
-	"hint" : "An animal that is said to be cheeky."
+    "rebus" : "📅 (M) + 🔑",
+    "answer" : "MONKEY",
+    "hint" : "An animal that is said to be cheeky."
   },
   {
-	"rebus" : "<i>p</i>",
-	"answer" : "PIANO",
-	"hint" : "<i>p</i> is it's symbol - it also has 🔑s that will not open your door."
+    "rebus" : "<i>p</i>",
+    "answer" : "PIANO",
+    "hint" : "<i>p</i> is it's symbol - it also has 🔑s that will not open your door."
   }
 ];
 
