@@ -37,10 +37,10 @@ var rebuses = [
   {
 	"rebus" : "α + β",
 	"answer" : "ALPHABET",
-	"hint" : "The first 2 letters of the Greek alphabet."
+	"hint" : "The first 2 letters of the Greek alphabet, merged to make an English word."
   },
   {
-    "rebus" : "ATHLE + ☑",
+    "rebus" : "ATHLE + ✓",
     "answer" : "ATHLETICS",
     "hint" : "A kind of sport."
   },
