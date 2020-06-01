@@ -25,12 +25,12 @@ var rebuses = [
     "hint" : "Faith in something or someone."
   },
   {
-    "rebus" : "🐇 <del>A</del> <ins>I</ins>",
+    "rebus" : "🐇, A → I",
     "answer" : "RIBBIT",
     "hint" : "The sound a frog makes."
   },
   {
-    "rebus" : "🐈 / 🐕 + ↻ + {SPACE} + 🚉",
+    "rebus" : "🐈 / 🐕 + ↻  + 🚉",
     "answer" : "PETROL STATION",
     "hint" : "Where you fill up your car with fuel - 🚉 = station."
   },
@@ -55,14 +55,24 @@ var rebuses = [
     "hint" : "<i>p</i> is it's symbol - it also has 🔑s that will not open your door."
   },
   {
-    "rebus" : "📗 + 🏠",
+    "rebus" : "📗 - BOOK + 🏠",
     "answer" : "GREENHOUSE",
-    "hint" : "📗 is green."
+    "hint" : "Where plants are kept to keep them hot."
   },
   {
     "rebus" : "🎄 / 🎅 + {SPACE} + ⏰",
     "answer" : "CHRISTMAS TIME",
     "hint" : "A time when 🎁s are sent and recieved."
+  },
+  {
+    "rebus" : "🏠 + 🌿",
+    "answer" : "HOUSEPLANT",
+    "hint" : "A plant in the house."
+  },
+  {
+    "rebus" : "💁 + 🔝 / 🗔",
+    "answer" : "DESKTOP",
+    "hint" : "💁 is an 'information <strong>desk</strong> person'"
   }
 ];
 
@@ -82,6 +92,7 @@ var nextrebus = function() {
     window.rebus = rebuses[rebusnum];
     text.innerHTML = rebus["rebus"];
     hint.innerHTML = "Hint: ";
+    correct.innerHTML = "Correct: " + correctnum.toString();
     rebusTotal.innerHTML = "Rebus no. " + (rebusnum + 1).toString() + " out of " + rebuses.length
   } else {
     rebusnum = 0;
@@ -94,7 +105,7 @@ check.onclick = function() {
     input.value = "";
     rebusnum += 1;
     correctnum += 1;
-    correct.innerHTML = "Correct: " + correctnum.toString();
+   
     nextrebus();
   } else {
     hint.innerHTML = "Hint: " + rebus["hint"];
