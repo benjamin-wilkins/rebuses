@@ -20,7 +20,7 @@ var rebuses = [
     "hint" : "Something that stops you from seeing bad things on the web."
   },
   {
-    "rebus" : "BE + 🌿",
+    "rebus" : "🐝 + 🌿",
     "answer" : "BELIEF",
     "hint" : "Faith in something or someone."
   },
@@ -65,7 +65,7 @@ var rebuses = [
     "hint" : "A time when 🎁s are sent and recieved."
   },
   {
-    "rebus" : "🏠 + 🌿",
+    "rebus" : "🏠 + PL + 🐜 + NT",
     "answer" : "HOUSEPLANT",
     "hint" : "A plant in the house."
   },
@@ -73,6 +73,11 @@ var rebuses = [
     "rebus" : "💁 + 🔝 / 🗔",
     "answer" : "DESKTOP",
     "hint" : "💁 is an 'information <strong>desk</strong> person'"
+  },
+  {
+    "rebus" : "🍯 + 🐝",
+    "answer" : "HONEYBEE",
+    "hint" : "A buzzing creatre that makes a sweet food"
   }
 ];
 
@@ -80,7 +85,7 @@ var hint = document.getElementById("hint");
 var text = document.getElementById("text");
 var input = document.getElementById("input");
 var check = document.getElementById("check");
-var random = document.getElementById("random")
+var random = document.getElementById("random");
 var correct = document.getElementById("correct");
 var goToRebus = document.getElementById("goToRebus");
 var rebusTotal = document.getElementById("rebusTotal");
