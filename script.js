@@ -60,7 +60,7 @@ var rebuses = [
     "hint" : "Where plants are kept to keep them hot."
   },
   {
-    "rebus" : "🎄 / 🎅 + {SPACE} + ⏰",
+    "rebus" : "🎄 / 🎅 + ⏰",
     "answer" : "CHRISTMAS TIME",
     "hint" : "A time when 🎁s are sent and recieved."
   },
@@ -82,10 +82,13 @@ var input = document.getElementById("input");
 var check = document.getElementById("check");
 var random = document.getElementById("random")
 var correct = document.getElementById("correct");
+var goToRebus = document.getElementById("goToRebus");
 var rebusTotal = document.getElementById("rebusTotal");
+var rebusNumber = document.getElementById("rebusNumber");
 
 window.rebusnum = 0;
 window.correctnum = 0;
+rebusTotal.innerHTML = rebuses.length
 
 var nextrebus = function() {
   if (rebusnum < rebuses.length) {
@@ -93,19 +96,18 @@ var nextrebus = function() {
     text.innerHTML = rebus["rebus"];
     hint.innerHTML = "Hint: ";
     correct.innerHTML = "Correct: " + correctnum.toString();
-    rebusTotal.innerHTML = "Rebus no. " + (rebusnum + 1).toString() + " out of " + rebuses.length
+    rebusNumber.value = (rebusnum + 1).toString()
   } else {
     rebusnum = 0;
-    nextrebus()
+    nextrebus();
   }
 };
 
 check.onclick = function() {
   if (input.value.toUpperCase() == rebus["answer"]) {
     input.value = "";
-    rebusnum += 1;
-    correctnum += 1;
-   
+    window.rebusnum += 1;
+    window.correctnum += 1;
     nextrebus();
   } else {
     hint.innerHTML = "Hint: " + rebus["hint"];
@@ -115,6 +117,11 @@ check.onclick = function() {
 random.onclick = function() {
   window.rebusnum = Math.floor(Math.random() * rebuses.length)
   nextrebus()
+};
+
+goToRebus.onclick = function() {
+  window.rebusnum = Number(rebusNumber.value - 1);
+  nextrebus();
 };
 
 nextrebus();

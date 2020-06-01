@@ -12,7 +12,13 @@
 	    <div class="alert alert-danger text-center" role="alert" id="hint"><noscript>We need Javascript enabled for this to work. Enable javascript or switch to another browser.</noscript></div>
 	    <div class="alert alert-success text-center" role="alert" id="correct"></div>
 	    <div class="alert alert-primary text-center" role="alert">
-		  <span class="badge badge-info" id="rebusTotal"></span>
+		  <span class="badge badge-info">
+			Rebus no.
+		    <input type="text" id="rebusNumber" size="2">
+		    <button type="button" class="badge badge-pill badge-success" id="goToRebus">Go</button>
+		    out of
+		    <span id="rebusTotal"></span>
+		  </span>
 		  <span id="text"></span>
 		</div>
 	    <div class="alert alert-warning" role="alert">
