@@ -5,7 +5,7 @@ var rebuses = [
     "hint" : "This is one!"
   },
   {
-    "rebus" : "❄ + :man:",
+    "rebus" : "❄ + 👨",
     "answer" : "SNOWMAN",
     "hint" : "Frosty the ____,"
   },
