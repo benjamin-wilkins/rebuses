@@ -78,6 +78,11 @@ var rebuses = [
     "rebus" : "🍯 + 🐝",
     "answer" : "HONEYBEE",
     "hint" : "A buzzing creatre that makes a sweet food"
+  },
+  {
+    "rebus" : "🐽 + 🐢",
+    "answer" : "PIG NOSED TURTLE"
+    "hint" : "An animal with a pig nose"
   }
 ];
 
